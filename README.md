@@ -18,13 +18,13 @@ Run command prompt code below in the terminal
 * `git clone <repository-url>` this repository
 * `cd <repository-name>`
 * `npm install`
-* `npm link`
 
 # Building
 
 Run the codes below in the terminal.
 
 * `tsc --build`
+* `npm link`
 * `npm run build`
 
 The application bundle is generated at `dist` folder.
