@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tailwindcss": "tailwindcss -i ./styles/app.css -o ./public/app.css",
     "build": "build"
   },
   "repository": {

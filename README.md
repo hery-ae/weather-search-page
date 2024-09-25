@@ -23,9 +23,17 @@ Run command prompt code below in the terminal
 
 Run the codes below in the terminal.
 
-* `tsc --build`
-* `npm link`
-* `npm run build`
+Build TypeScript to CommonJS
+`tsc --build`
+
+Add CLI packages into global NPM
+`npm link`
+
+Generate TailwindCSS
+`npm run tailwindcss`
+
+Build the application bundle
+`npm run build`
 
 The application bundle is generated at `dist` folder.
 
