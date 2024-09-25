@@ -1,0 +1,36 @@
+{
+  "name": "weather-search-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hery-ae/weather-search-page.git"
+  },
+  "author": "hery",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hery-ae/weather-search-page/issues"
+  },
+  "homepage": "https://github.com/hery-ae/weather-search-page#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "html-webpack-plugin": "^5.6.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "bin": {
+    "build": "./bin/build.js"
+  }
+}
