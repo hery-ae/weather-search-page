@@ -16,9 +16,6 @@
     "url": "https://github.com/hery-ae/weather-search-page/issues"
   },
   "homepage": "https://github.com/hery-ae/weather-search-page#readme",
-  "dependencies": {
-    "express": "^4.19.2"
-  },
   "devDependencies": {
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
