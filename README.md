@@ -6,14 +6,13 @@ A short introduction of this app could easily go here.
 
 You will need the following things properly installed on your computer.
 
-* [Windows 8.1 or newer]
-* [Git](https://git-scm.com/)
-* [Node.js 16.x or newer](https://nodejs.org/) (with npm)
-* [TypeScript](https://www.typescriptlang.org/)
+* [Command Prompt](https://www.microsoft.com)
+* [Git](https://git-scm.com)
+* [Node.js 16.x or newer](https://nodejs.org) (with npm)
 
 # Installation
 
-Run command prompt code below in the terminal
+Run the codes below in the terminal.
 
 * `git clone <repository-url>` this repository
 * `cd <repository-name>`
@@ -21,18 +20,8 @@ Run command prompt code below in the terminal
 
 # Building
 
-Run the codes below in the terminal.
+Run the command prompt.
 
-Build TypeScript to CommonJS\
-`tsc --build`
-
-Add CLI packages into NPM globally\
-`npm link`
-
-Generate TailwindCSS\
-`npm run tailwindcss`
-
-Build the application bundle\
 `npm run build`
 
 The application bundle is generated at `dist` folder.

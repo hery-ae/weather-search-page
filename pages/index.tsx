@@ -4,6 +4,8 @@ import Search from '../components/search'
 import Skeleton from '../components/skeleton'
 import Weather from '../components/weather'
 
+import '../styles/app.css'
+
 const rootElem = document.createElement('div')
 rootElem.id = 'app'
 
@@ -23,13 +25,15 @@ function App({ title }: { title: string }) {
     const getWeather = (event: React.FormEvent) => {
         event.preventDefault()
 
+        const formData = new FormData(event.currentTarget as HTMLFormElement)
+        const term = formData.get('term') as string
+
+        if (!term) return term
+
         document.querySelector('.container')?.classList.replace('pt-20', 'pt-4')
 
         setSpinnerIsHidden(false)
         setWeatherData(null)
-
-        const formData = new FormData(event.currentTarget as HTMLFormElement)
-        const term = formData.get('term') as string
 
         fetch(
             ('https://api.openweathermap.org/data/2.5/weather').concat('?').concat(

@@ -16,5 +16,37 @@ module.exports = {
             filename: 'index.html'
         })
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                exclude: /node_modules/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: {
+                                    tailwindcss: {
+                                        content: [
+                                            './pages/**/*.js',
+                                            './components/**/*.js'
+                                          ],
+                                          theme: {
+                                            extend: {}
+                                          },
+                                          plugins: []
+                                    },
+                                    autoprefixer: {}
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
     mode: 'production'
 }
