@@ -19,7 +19,12 @@ export default function weather({ data }: { data: any }) {
                     <h3 className='text-5xl text-center mb-2'>{(data.main.temp - 273.15).toFixed()}&deg;C</h3>
                     <h3 className='text-xl text-center mb-3'>{(1.8 * (data.main.temp - 273.15) + 32).toFixed()}&deg;F</h3>
                     <img src={('https://openweathermap.org/img/wn/').concat(data.weather[0].icon).concat('@2x.png')} alt={data.weather[0].main} className='mx-auto' />
-                    <p className='text-2xl text-center font-semibold mb-3 first-letter:uppercase'>{data.weather[0].description}</p>
+                    <p className='text-2xl text-center font-semibold'>{data.weather[0].main}</p>
+                    {
+                        data.weather[0].main.toLowerCase() !== data.weather[0].description.toLowerCase() && (
+                            <p className='text-xl text-center font-normal mb-4 first-letter:uppercase'>{data.weather[0].description}</p>
+                        )
+                    }
                 </div>
             </div>
             <div className='border rounded overflow-hidden shadow'>
